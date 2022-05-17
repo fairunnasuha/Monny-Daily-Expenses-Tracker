@@ -121,7 +121,7 @@ public class signuppage extends AppCompatActivity {
     }
 
     public void backtomainpg(View view) {
-        Intent intent = new Intent(signuppage.this,MainActivity.class);
+        Intent intent = new Intent(signuppage.this, welcomepage.class);
         startActivity(intent);
     }
 
