@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MONNY">
-
+        <activity
+            android:name=".statisticpage"
+            android:exported="false" />
         <activity
             android:name=".EventEditActivity"
             android:exported="false" />
         <activity
             android:name=".WeekViewActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homemyexpense"
             android:exported="false" />

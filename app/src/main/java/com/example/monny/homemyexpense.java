@@ -18,4 +18,9 @@ public class homemyexpense extends AppCompatActivity {
         Intent intent = new Intent(homemyexpense.this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void tostatisticpage(View view) {
+        Intent intent = new Intent(homemyexpense.this, statisticpage.class);
+        startActivity(intent);
+    }
 }
