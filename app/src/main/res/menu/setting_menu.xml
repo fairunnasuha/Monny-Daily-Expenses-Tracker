@@ -1,0 +1,43 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/profilee"
+                android:title="Profile"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/notifi"
+                android:title="Notification"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/about"
+                android:title="About"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+        <item
+            app:showAsAction="always"
+            android:icon="@drawable/ic_stat_assessment"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/weeklyy"
+                    android:title="Weekly"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/monthlyy"
+                    android:title="Monthly"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/highestloweste"
+                    android:title="Highest and Lowest Expense"
+                    app:showAsAction="never"/>
+            </menu>
+        </item>
+</menu>

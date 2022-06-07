@@ -145,7 +145,8 @@
         android:layout_marginRight="19dp"
         android:layout_marginBottom="93dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/nextbutton" />
+        android:foreground="@drawable/nextbutton"
+        android:onClick="tologin"/>
 
     <Button
         android:id="@+id/backsign"

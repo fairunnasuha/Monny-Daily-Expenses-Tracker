@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 
 public class homemyexpense extends AppCompatActivity {
@@ -22,5 +23,11 @@ public class homemyexpense extends AppCompatActivity {
     public void tostatisticpage(View view) {
         Intent intent = new Intent(homemyexpense.this, statisticpage.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.setting_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

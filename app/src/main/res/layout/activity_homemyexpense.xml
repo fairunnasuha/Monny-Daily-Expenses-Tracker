@@ -7,6 +7,7 @@
     tools:context=".homemyexpense"
     android:background="@drawable/homebgg">
 
+
     <TextView
         android:layout_width="260dp"
         android:layout_height="61dp"
@@ -17,36 +18,9 @@
         android:layout_marginLeft="23dp"
         android:layout_marginTop="15dp"
         android:text="MY EXPENSES"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/homesetting"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="-15dp"
-        android:layout_marginEnd="-20dp"
-        android:layout_marginRight="-20dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/settingg" />
-
-    <Button
-        android:id="@+id/homestatistic"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/statistic"
-        android:onClick="tostatisticpage" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,12 +61,21 @@
 
     <Button
         android:id="@+id/btncalendar"
-        android:layout_width="145dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="191dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/addicon"
+        android:foreground="@drawable/cash"
         android:onClick="calendarfc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp"
+        android:text="Add daily expenses"
+        android:textColor="@color/gray" />
 </RelativeLayout>

@@ -4,19 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Fairun/AndroidStudioProjects/Monny/app/src/main/res/layout/activity_loginpage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_event_edit.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.264" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_securitypage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Fairun/OneDrive/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_statisticpage.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_event_edit.xml" value="0.215625" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.215625" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.215625" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.25" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_main.xml" value="0.215625" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_signuppage.xml" value="0.215625" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_week_view.xml" value="0.21145833333333333" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/calendar_cell.xml" value="0.21145833333333333" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/event_cell.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/setting_menu.xml" value="0.215625" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/statistic_item.xml" value="0.25" />
       </map>
     </option>
   </component>

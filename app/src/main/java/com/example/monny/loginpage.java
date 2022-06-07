@@ -74,4 +74,9 @@ public class loginpage extends AppCompatActivity {
         Intent intent = new Intent(loginpage.this, welcomepage.class);
         startActivity(intent);
     }
+
+    public void tohome(View view) {
+        Intent intent = new Intent(loginpage.this, homemyexpense.class);
+        startActivity(intent);
+    }
 }

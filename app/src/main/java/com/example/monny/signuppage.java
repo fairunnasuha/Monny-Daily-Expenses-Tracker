@@ -125,4 +125,8 @@ public class signuppage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void tologin(View view) {
+        Intent intent = new Intent(signuppage.this,loginpage.class);
+        startActivity(intent);
+    }
 }
