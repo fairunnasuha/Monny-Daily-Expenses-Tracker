@@ -20,11 +20,6 @@ public class homemyexpense extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void tostatisticpage(View view) {
-        Intent intent = new Intent(homemyexpense.this, statisticpage.class);
-        startActivity(intent);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.setting_menu, menu);

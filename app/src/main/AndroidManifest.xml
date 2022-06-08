@@ -13,9 +13,6 @@
             android:name=".aboutpage"
             android:exported="false" />
         <activity
-            android:name=".statisticpage"
-            android:exported="false" />
-        <activity
             android:name=".EventEditActivity"
             android:exported="false" />
         <activity
@@ -29,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".securitypage"
-            android:exported="false" />
-        <activity
-            android:name=".settingpage"
             android:exported="false" />
         <activity
             android:name=".signuppage"
