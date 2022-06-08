@@ -22,34 +22,6 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/homesetting"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="-15dp"
-        android:layout_marginEnd="-20dp"
-        android:layout_marginRight="-20dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/settingg" />
-
-    <Button
-        android:id="@+id/homestatistic"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/statistic"
-        android:onClick="tostatisticpage" />
->>>>>>> 852b97d34de34877bfcf88cffe69662019c45d3b
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
