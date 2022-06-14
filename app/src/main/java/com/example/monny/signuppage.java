@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class signuppage extends AppCompatActivity {
     EditText inputEmail,pass1,pass2,userName;
     Button btnRegister;
+    boolean passwordvisible;
 
     FirebaseDatabase fDatabase;
     DatabaseReference dRef;
@@ -35,6 +39,56 @@ public class signuppage extends AppCompatActivity {
         pass2=findViewById(R.id.confirmpass);
         userName=findViewById(R.id.usernamesign);
         btnRegister=findViewById(R.id.nextsign);
+
+        pass1.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final int Right=2;
+                if(event.getAction()==MotionEvent.ACTION_UP){
+                    if(event.getRawX()>=pass1.getRight()-pass1.getCompoundDrawables()[Right].getBounds().width()){
+                        int selection=pass1.getSelectionEnd();
+                        if(passwordvisible){
+                            pass1.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0, R.drawable.ic_baseline_visibility_off_24,0);
+                            pass1.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                            passwordvisible=false;
+                        }else {
+                            pass1.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0, R.drawable.ic_baseline_visibility_24,0);
+                            pass1.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                            passwordvisible=true;
+
+                        }
+                        pass1.setSelection(selection);
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
+        pass2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final int Right=2;
+                if(event.getAction()==MotionEvent.ACTION_UP){
+                    if(event.getRawX()>=pass2.getRight()-pass2.getCompoundDrawables()[Right].getBounds().width()){
+                        int selection=pass1.getSelectionEnd();
+                        if(passwordvisible){
+                            pass2.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0, R.drawable.ic_baseline_visibility_off_24,0);
+                            pass2.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                            passwordvisible=false;
+                        }else {
+                            pass2.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0, R.drawable.ic_baseline_visibility_24,0);
+                            pass2.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                            passwordvisible=true;
+
+                        }
+                        pass2.setSelection(selection);
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
 
 
         fDatabase = FirebaseDatabase.getInstance();
