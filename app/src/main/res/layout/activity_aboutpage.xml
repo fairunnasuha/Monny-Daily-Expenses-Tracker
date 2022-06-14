@@ -111,15 +111,7 @@
         android:layout_marginEnd="94dp"
         android:text="2020615302@student.uitm.edu.my" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="134dp"
-        app:srcCompat="@drawable/madihah" />
+
 
     <TextView
         android:id="@+id/textView8"
@@ -154,5 +146,15 @@
         android:layout_marginTop="429dp"
         android:layout_marginEnd="89dp"
         android:text="2020828718@student.uitm.edu.my" />
-    
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="126dp"
+        app:srcCompat="@drawable/madihah" />
+
 </RelativeLayout>
