@@ -2,6 +2,13 @@
     <string name="app_name">MONNY</string>
     <string name="back"><![CDATA[<-]]></string>
     <string name="forward"><![CDATA[->]]></string>
-    <string name="MONNY">Hyperlink TextView</string>
-    <string name="GITHUB"><a href="https://learntodroid.com"></a></string>
+    <string-array name="names">
+        <item>Personal</item>
+        <item>Food</item>
+        <item>Groceries</item>
+        <item>Bills</item>
+        <item>Transportation</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>
