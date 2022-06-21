@@ -28,9 +28,6 @@
             android:name=".homemyexpense"
             android:exported="false" />
         <activity
-            android:name=".securitypage"
-            android:exported="false" />
-        <activity
             android:name=".signuppage"
             android:exported="false" />
         <activity

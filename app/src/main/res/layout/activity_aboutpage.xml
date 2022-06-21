@@ -166,7 +166,8 @@
         android:layout_marginStart="79dp"
         android:layout_marginBottom="4dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/githubicon" />
+        android:foreground="@drawable/githubicon"
+        android:onClick="gitlink"/>
 
     <Button
         android:id="@+id/youtube"
@@ -178,7 +179,8 @@
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="4dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/yutube" />
+        android:foreground="@drawable/yutube"
+        android:onClick="ytubelink"/>
 
     <Button
         android:id="@+id/email"
@@ -189,6 +191,19 @@
         android:layout_marginEnd="97dp"
         android:layout_marginBottom="9dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/emailicon" />
+        android:foreground="@drawable/emailicon"
+        android:onClick="emellink"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="96dp"
+        android:text="ABOUT"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
 </RelativeLayout>

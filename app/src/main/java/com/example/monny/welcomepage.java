@@ -14,7 +14,11 @@ public class welcomepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_page);
+    }
 
+    private void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 
     public void logintonextpage(View view) {
@@ -25,5 +29,17 @@ public class welcomepage extends AppCompatActivity {
     public void signuptonextpage(View view) {
         Intent intent = new Intent(welcomepage.this,signuppage.class);
         startActivity(intent);
+    }
+
+    public void githublink(View view) {
+        gotoUrl("https://github.com/fairunnasuha/Monny-Daily-Expenses-Tracker");
+    }
+
+    public void utubelink(View view) {
+        gotoUrl("https://www.youtube.com/channel/UCtviIetLp-9CrEGigjrV3fw");
+    }
+
+    public void emaillink(View view) {
+        gotoUrl("2020489584@student.uitm.edu.my");
     }
 }
