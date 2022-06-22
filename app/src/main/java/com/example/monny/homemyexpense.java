@@ -40,6 +40,23 @@ public class homemyexpense extends AppCompatActivity {
             return true;
 
         }
+        else
+            if (id == R.id.about)
+        {
+            Intent intent = new Intent(homemyexpense.this,aboutpage.class);
+            startActivity(intent);
+            return true;
+
+        }
+        else
+            if (id==R.id.notifi)
+            {
+                Intent intent = new Intent(homemyexpense.this,notificationpage.class);
+                startActivity(intent);
+                return true;
+
+            }
+
         return super.onOptionsItemSelected(item);
 
     }
