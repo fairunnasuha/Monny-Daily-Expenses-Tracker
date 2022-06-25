@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MONNY">
         <activity
+            android:name=".spendbycategory"
+            android:exported="false" />
+        <activity
+            android:name=".monthlypage"
+            android:exported="false" />
+        <activity
+            android:name=".weeklyspend"
+            android:exported="false" />
+        <activity
             android:name=".notificationpage"
             android:exported="false" />
         <activity

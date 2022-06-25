@@ -35,8 +35,8 @@
                     android:title="Monthly"
                     app:showAsAction="never"/>
                 <item
-                    android:id="@+id/highestloweste"
-                    android:title="Highest and Lowest Expense"
+                    android:id="@+id/sdcategory"
+                    android:title="Spend by Category"
                     app:showAsAction="never"/>
             </menu>
         </item>

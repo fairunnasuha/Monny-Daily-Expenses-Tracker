@@ -56,7 +56,27 @@ public class homemyexpense extends AppCompatActivity {
                 return true;
 
             }
-
+            else
+                if(id==R.id.weeklyy)
+                {
+                    Intent intent = new Intent(homemyexpense.this,weeklyspend.class);
+                    startActivity(intent);
+                    return true;
+                }
+                else
+                if(id==R.id.monthlyy)
+                {
+                    Intent intent = new Intent(homemyexpense.this,monthlypage.class);
+                    startActivity(intent);
+                    return true;
+                }
+                else
+                if(id==R.id.sdcategory)
+                {
+                    Intent intent = new Intent(homemyexpense.this,spendbycategory.class);
+                    startActivity(intent);
+                    return true;
+                }
         return super.onOptionsItemSelected(item);
 
     }
