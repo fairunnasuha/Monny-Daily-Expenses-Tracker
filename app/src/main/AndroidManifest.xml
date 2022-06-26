@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MONNY">
+
+        <activity android:name=".MainActivity"
+            android:exported="true"/>
+
+        <activity android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen"/>
+
         <activity
             android:name=".spendbycategory"
             android:exported="false" />
@@ -33,9 +41,7 @@
         <activity
             android:name=".WeekViewActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
         <activity
             android:name=".homemyexpense"
             android:exported="false" />
