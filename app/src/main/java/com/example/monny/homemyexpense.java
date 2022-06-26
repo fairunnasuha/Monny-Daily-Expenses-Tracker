@@ -35,7 +35,7 @@ public class homemyexpense extends AppCompatActivity {
         int id = item.getItemId();
         if(id==R.id.profilee)
         {
-            Intent intent = new Intent(homemyexpense.this,Profilepage.class);
+            Intent intent = new Intent(homemyexpense.this,UserProfile.class);
             startActivity(intent);
             return true;
 

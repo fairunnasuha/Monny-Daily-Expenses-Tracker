@@ -30,9 +30,6 @@
             android:name=".notificationpage"
             android:exported="false" />
         <activity
-            android:name=".Profilepage"
-            android:exported="false" />
-        <activity
 <<<<<<< Updated upstream
             android:name=".aboutpage"
             android:exported="false" />
