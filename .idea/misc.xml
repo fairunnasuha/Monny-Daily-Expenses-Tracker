@@ -5,16 +5,43 @@
       <map>
         <entry key="..\:/Users/Fairun/AndroidStudioProjects/Monny/app/src/main/res/layout/activity_loginpage.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_event_edit.xml" value="0.215625" />
+<<<<<<< Updated upstream
 
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.215625" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.1" />
+=======
+<<<<<<< HEAD
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.215625" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.215625" />
+=======
+
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.215625" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.1" />
+>>>>>>> 03782a5c7496b4ef7be24968777ef44779cae7ac
+>>>>>>> Stashed changes
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_main.xml" value="0.215625" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_signuppage.xml" value="0.215625" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_week_view.xml" value="0.21145833333333333" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/calendar_cell.xml" value="0.21145833333333333" />
         <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/event_cell.xml" value="0.21145833333333333" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/setting_menu.xml" value="0.215625" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/statistic_item.xml" value="0.25" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/drawable/ic_android.xml" value="0.1715" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.193" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1705" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/drawable/ic_more_vert.xml" value="0.1715" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/drawable/ic_profile.xml" value="0.193" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_aboutpage.xml" value="0.264" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_event_edit.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_homemyexpense.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_loginpage.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_securitypage.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_signuppage.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_user_profile.xml" value="0.264" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/activity_week_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/calendar_cell.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/event_cell.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/layout/welcome_page.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/menu_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Madihah Aziz/Downloads/NOTES SEM 4/CSC660/Project/Monny-Daily-Expenses-Tracker/app/src/main/res/menu/setting_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

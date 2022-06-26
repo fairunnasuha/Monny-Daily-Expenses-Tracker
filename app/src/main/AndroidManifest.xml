@@ -33,12 +33,24 @@
             android:name=".Profilepage"
             android:exported="false" />
         <activity
+<<<<<<< Updated upstream
             android:name=".aboutpage"
             android:exported="false" />
         <activity
             android:name=".EventEditActivity"
             android:exported="false" />
         <activity
+=======
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".aboutpage"
+            android:exported="false" />
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+>>>>>>> Stashed changes
             android:name=".WeekViewActivity"
             android:exported="false" />
 
