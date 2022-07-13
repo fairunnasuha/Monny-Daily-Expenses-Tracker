@@ -23,6 +23,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/mywallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -65,7 +66,7 @@
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="191dp"
+        android:layout_marginBottom="109dp"
         android:background="?android:attr/selectableItemBackground"
         android:foreground="@drawable/cash"
         android:onClick="calendarfc" />
@@ -75,7 +76,40 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="168dp"
+        android:layout_marginBottom="84dp"
         android:text="Add daily expenses"
         android:textColor="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="229dp"
+        android:text="Enter your wallet"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="RM"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="122dp"
+        android:text="Insert"
+        android:backgroundTint="#2196F3"/>
 </RelativeLayout>
