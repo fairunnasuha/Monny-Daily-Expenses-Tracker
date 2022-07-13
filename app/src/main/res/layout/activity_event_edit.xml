@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,43 +12,43 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Product"
-        android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/eventProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
         android:ems="10"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:text="Remark" />
-
-    <EditText
-        android:id="@+id/remarkprod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_gravity="center"
+        android:inputType="text"
         android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Remark"
         android:textAlignment="center"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="Select Category" />
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/remarkprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -60,30 +59,22 @@
 
     </Spinner>
 
-    <EditText
-        android:id="@+id/categoryevent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_gravity="center"
-        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Price"
         android:textAlignment="center"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="Price" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/priceprod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_gravity="center"
         android:textSize="20sp" />
 
     <TextView
@@ -93,9 +84,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Date"
-        android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/eventTimeTV"
@@ -104,9 +95,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Time"
-        android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -120,4 +111,19 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/addcategory"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/gray"
+        android:text="+"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>

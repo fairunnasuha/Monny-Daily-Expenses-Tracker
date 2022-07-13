@@ -15,7 +15,7 @@ import java.time.LocalTime;
 
 public class EventEditActivity extends AppCompatActivity
 {
-    private EditText eventProduct, remarkprod, categoryevent, priceprod;
+    private EditText eventProduct, remarkprod, priceprod;
     private TextView eventDateTV, eventTimeTV;
 
     private LocalTime time;
@@ -60,7 +60,7 @@ public class EventEditActivity extends AppCompatActivity
     {
         eventProduct = findViewById(R.id.eventProduct);
         remarkprod = findViewById(R.id.remarkprod);
-        categoryevent = findViewById(R.id.categoryevent);
+        spinner = findViewById(R.id.spinner);
         priceprod = findViewById(R.id.priceprod);
         eventDateTV = findViewById(R.id.eventDateTV);
         eventTimeTV = findViewById(R.id.eventTimeTV);

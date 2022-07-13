@@ -13,10 +13,6 @@
         <activity android:name=".MainActivity"
             android:exported="true"/>
 
-        <activity android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/SplashScreen"/>
-
         <activity
             android:name=".spendbycategory"
             android:exported="false" />
@@ -30,24 +26,16 @@
             android:name=".notificationpage"
             android:exported="false" />
         <activity
-<<<<<<< Updated upstream
+
             android:name=".aboutpage"
             android:exported="false" />
         <activity
             android:name=".EventEditActivity"
             android:exported="false" />
         <activity
-=======
             android:name=".UserProfile"
             android:exported="false" />
         <activity
-            android:name=".aboutpage"
-            android:exported="false" />
-        <activity
-            android:name=".EventEditActivity"
-            android:exported="false" />
-        <activity
->>>>>>> Stashed changes
             android:name=".WeekViewActivity"
             android:exported="false" />
 
