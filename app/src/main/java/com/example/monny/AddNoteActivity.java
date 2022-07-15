@@ -8,15 +8,29 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Map;
 
 import io.realm.Realm;
 
 public class AddNoteActivity extends AppCompatActivity {
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
+    DatabaseReference databaseReference;
+    private FirebaseAuth mAuth;
+    static String currentMoney;
+    String userID;
+    boolean loop=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,16 +86,35 @@ public class AddNoteActivity extends AppCompatActivity {
                 realm.commitTransaction();
                 Toast.makeText(getApplicationContext(),"Note saved",Toast.LENGTH_SHORT).show();
 
-                /*double currentMoney = Double.parseDouble(money.getCurrentExpense());
-                double dprice;
+                mAuth = FirebaseAuth.getInstance();
+                userID = mAuth.getCurrentUser().getUid();
+                databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(userID).child("MyExpense");
 
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
+                            Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
 
-                dprice= Double.parseDouble(prices);
+                            if (map.get("currentExpense") != null&&loop==false) {
+                                currentMoney = map.get("currentExpense").toString();
+                                double dmoney = Double.parseDouble(currentMoney)-Double.parseDouble(prices);
+                                money test = new money(Double.toString(dmoney));
+                                FirebaseDatabase.getInstance().getReference("Users")
+                                        .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("MyExpense")
+                                        .setValue(test);
+                                loop=true;
+                            }else{
 
-                currentMoney = currentMoney - dprice;
+                            }
+                        }
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                System.out.println("test1"+currentMoney);*/
+                    }
 
+                });
 
                 finish();
 

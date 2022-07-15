@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="#3000B0FF"
-            android:hint="RM"
+            android:hint="Purchase"
             android:padding="10dp" />
 
         <EditText
@@ -44,7 +44,7 @@
             android:layout_margin="10dp"
             android:background="#3000B0FF"
             android:gravity="top"
-            android:hint="Purchase"
+            android:hint="Price"
             android:lines="10"
             android:padding="10dp" />
 

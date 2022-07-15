@@ -27,8 +27,8 @@ import java.util.Map;
 
 public class homemyexpense extends AppCompatActivity {
 EditText mwallet;
-String mymoney,userID;
-TextView walletm;
+String mymoney,mymoney1,userID,strTotal;
+TextView walletm,totalexpense;
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -42,76 +42,91 @@ TextView walletm;
 
         mwallet = findViewById(R.id.wallet);
         walletm = findViewById(R.id.mywallet);
+        totalexpense = findViewById(R.id.totalexpense);
 
 
 
         System.out.println("TEST "+mymoney);
 
-        mAuth = FirebaseAuth.getInstance();
-        userID = mAuth.getCurrentUser().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(userID).child("MyExpense");
 
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
-                    Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
-                    if (map.get("currentExpense") != null) {
-                        mymoney = map.get("currentExpense").toString();
-                        walletm.setText("RM "+mymoney);
+                mAuth = FirebaseAuth.getInstance();
+                userID = mAuth.getCurrentUser().getUid();
+                databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(userID).child("MyExpense");
 
-                    }else{
-                        walletm.setText("RM 0.0");
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
+                            Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                            if (map.get("currentExpense") != null) {
+                                mymoney = map.get("currentExpense").toString();
+                                walletm.setText("RM "+mymoney);
+
+                            }else{
+                                walletm.setText("RM 0.0");
+                            }
+                            if (map.get("total") != null) {
+                                mymoney1 = map.get("total").toString();
+                                totalexpense.setText("RM"+mymoney1);
+
+                            }
+                        }
                     }
-                }
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
 
             }
-        });
 
-    }
-
-    public void toaddnote(View view) {
-        Intent intent = new Intent(homemyexpense.this,ViewActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.setting_menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id==R.id.profilee)
-        {
-            Intent intent = new Intent(homemyexpense.this,UserProfile.class);
-            startActivity(intent);
-            return true;
-
-        }
-        else
-            if (id == R.id.about)
-        {
-            Intent intent = new Intent(homemyexpense.this,aboutpage.class);
-            startActivity(intent);
-            return true;
-
-        }
-        else
-            if (id==R.id.notifi)
-            {
-                Intent intent = new Intent(homemyexpense.this,notificationpage.class);
+            public void toaddnote(View view) {
+                Intent intent = new Intent(homemyexpense.this, ViewActivity.class);
                 startActivity(intent);
-                return true;
-
             }
-            else
+
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu){
+                MenuInflater inflater = getMenuInflater();
+                inflater.inflate(R.menu.setting_menu,menu);
+                return super.onCreateOptionsMenu(menu);
+            }
+
+            @Override
+            public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if(id==R.id.profilee)
+                {
+                    Intent intent = new Intent(homemyexpense.this,UserProfile.class);
+                    startActivity(intent);
+                    return true;
+
+                }
+                else
+                if (id == R.id.about)
+                {
+                    Intent intent = new Intent(homemyexpense.this,aboutpage.class);
+                    startActivity(intent);
+                    return true;
+
+                }
+                else
+                if (id==R.id.notifi)
+                {
+                    Intent intent = new Intent(homemyexpense.this,notificationpage.class);
+                    startActivity(intent);
+                    return true;
+
+                }
+                else
+                if(id==R.id.logout)
+                {
+                    Intent intent = new Intent(homemyexpense.this,welcomepage.class);
+                    startActivity(intent);
+                    return true;
+                }
+                else
                 if(id==R.id.weeklyy)
                 {
                     Intent intent = new Intent(homemyexpense.this,weeklyspend.class);
@@ -132,18 +147,24 @@ TextView walletm;
                     startActivity(intent);
                     return true;
                 }
-        return super.onOptionsItemSelected(item);
+                return super.onOptionsItemSelected(item);
 
-    }
+            }
 
-    public void saveMoney(View view) {
-        mymoney=mwallet.getText().toString();
-        money moneys = new money(mymoney);
-        System.out.println("TEST "+mymoney);
-        FirebaseDatabase.getInstance().getReference("Users")
-                .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("MyExpense")
-                .setValue(moneys);
+            public void saveMoney(View view) {
+                mymoney=mwallet.getText().toString();
+                strTotal=mwallet.getText().toString();
 
-        mwallet.setText("");
-    }
-}
+                money moneys = new money(mymoney);
+                System.out.println("TEST "+mymoney);
+                FirebaseDatabase.getInstance().getReference("Users")
+                        .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("MyExpense")
+                        .setValue(moneys);
+                FirebaseDatabase.getInstance().getReference("Users")
+                        .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("MyExpense").child("total")
+                        .setValue(strTotal);
+
+
+                mwallet.setText("");
+            }
+        }

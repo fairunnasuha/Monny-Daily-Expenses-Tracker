@@ -43,5 +43,7 @@ public class weeklyspend extends AppCompatActivity {
         barEntries.add(new BarEntry(1f,4));
         barEntries.add(new BarEntry(9f,5));
         barEntries.add(new BarEntry(6f,6));
+        barEntries.add(new BarEntry(6f,6));
+        barEntries.add(new BarEntry(6f,6));
     }
 }

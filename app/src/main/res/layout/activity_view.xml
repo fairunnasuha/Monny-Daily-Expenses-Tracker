@@ -12,7 +12,7 @@
         android:id="@+id/notestitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TODAY'S EXPENSES"
+        android:text="EXPENSES LIST"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold" />
