@@ -6,9 +6,13 @@
         <item>Personal</item>
         <item>Food</item>
         <item>Groceries</item>
-        <item>Bills</item>
+        <item>Utilities</item>
         <item>Transportation</item>
+        <item>Health</item>
+        <item>Housing</item>
+        <item>Insurance</item>
         <item>Other</item>
+
     </string-array>
 
 </resources>

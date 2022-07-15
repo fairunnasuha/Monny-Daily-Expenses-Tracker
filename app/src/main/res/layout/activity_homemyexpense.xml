@@ -33,7 +33,6 @@
         android:layout_marginStart="97dp"
         android:layout_marginLeft="97dp"
         android:layout_marginTop="58dp"
-        android:text="RM 1000.00"
         android:textSize="40sp" />
 
     <TextView
@@ -66,10 +65,10 @@
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="109dp"
+        android:layout_marginBottom="95dp"
         android:background="?android:attr/selectableItemBackground"
         android:foreground="@drawable/cash"
-        android:onClick="calendarfc" />
+        android:onClick="toaddnote" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,7 +99,8 @@
         android:layout_marginEnd="45dp"
         android:ems="10"
         android:hint="RM"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        />
 
     <Button
         android:id="@+id/insert"
@@ -110,6 +110,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="258dp"
         android:layout_marginEnd="122dp"
+        android:backgroundTint="#2196F3"
         android:text="Insert"
-        android:backgroundTint="#2196F3"/>
+        android:onClick="saveMoney"/>
 </RelativeLayout>

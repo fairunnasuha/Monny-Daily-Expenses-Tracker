@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MONNY">
-
-        <activity android:name=".MainActivity"
-            android:exported="true"/>
-
+        <activity
+            android:name=".ViewActivity"
+            android:exported="false" />
         <activity
             android:name=".spendbycategory"
             android:exported="false" />
@@ -26,24 +25,19 @@
             android:name=".notificationpage"
             android:exported="false" />
         <activity
-
             android:name=".aboutpage"
-            android:exported="false" />
-        <activity
-            android:name=".EventEditActivity"
             android:exported="false" />
         <activity
             android:name=".UserProfile"
             android:exported="false" />
         <activity
-            android:name=".WeekViewActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".homemyexpense"
             android:exported="false" />
         <activity
             android:name=".signuppage"
+            android:exported="false" />
+        <activity
+            android:name=".AddNoteActivity"
             android:exported="false" />
         <activity
             android:name=".loginpage"
