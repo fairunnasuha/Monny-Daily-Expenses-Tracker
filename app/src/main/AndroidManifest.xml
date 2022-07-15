@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MONNY">
+
+        <activity
+            android:name=".welcomepage"
+            />
+
         <activity
             android:name=".ViewActivity"
             android:exported="false" />
@@ -43,8 +48,9 @@
             android:name=".loginpage"
             android:exported="false" />
         <activity
-            android:name=".welcomepage"
-            android:exported="true">
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
