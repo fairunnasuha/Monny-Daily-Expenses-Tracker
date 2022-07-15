@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcomepage"
-    android:background="@drawable/bggreet">
+    android:background="#9FE8D7"
+    tools:context=".welcomepage">
 
 
     <Button
         android:id="@+id/logingt"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="243dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/login"
-        android:onClick="logintonextpage" />
+        android:foreground="@drawable/loginnew"
+        android:onClick="signuptonextpage" />
 
     <Button
         android:id="@+id/signupgt"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
-        android:layout_marginBottom="137dp"
+        android:layout_marginBottom="152dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foreground="@drawable/signup"
+        android:foreground="@drawable/signupnew"
         android:onClick="signuptonextpage" />
 
     <Button
@@ -44,11 +44,11 @@
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="231dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginBottom="4dp"
         android:background="?android:attr/selectableItemBackground"
         android:foreground="@drawable/emailicon"
-        android:onClick="emaillink"/>
+        android:onClick="emaillink" />
 
     <Button
         android:id="@+id/ytube"
@@ -61,7 +61,7 @@
         android:layout_marginBottom="-2dp"
         android:background="?android:attr/selectableItemBackground"
         android:foreground="@drawable/yutube"
-        android:onClick="utubelink"/>
+        android:onClick="utubelink" />
 
     <Button
         android:id="@+id/githubwel"
@@ -69,11 +69,24 @@
         android:layout_height="71dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="-3dp"
         android:background="?android:attr/selectableItemBackground"
         android:foreground="@drawable/githubicon"
-        android:onClick="githublink"/>
+        android:onClick="githublink" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/logo" />
 
 
 </RelativeLayout>
