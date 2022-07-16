@@ -1,10 +1,14 @@
 package com.example.monny;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -31,6 +35,9 @@ public class AddNoteActivity extends AppCompatActivity {
     static String currentMoney;
     String userID;
     boolean loop=false;
+    Button uploadi;
+    ImageView imup;
+    int SELECT_IMAGE_CODE=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +49,25 @@ public class AddNoteActivity extends AppCompatActivity {
         EditText price = findViewById(R.id.priceInput);
         Spinner category = findViewById(R.id.categoryInput);
         MaterialButton saveBtn = findViewById(R.id.savebtn);
+        uploadi = findViewById(R.id.upload);
+        imup = findViewById(R.id.upimage);
 
         spinner = (Spinner) findViewById(R.id.categoryInput);
         adapter = ArrayAdapter.createFromResource(this, R.array.names, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        uploadi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Title"), SELECT_IMAGE_CODE);
+            }
+        });
+
+
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -123,5 +144,16 @@ public class AddNoteActivity extends AppCompatActivity {
         });
 
 
+    }
+    @Override
+    protected void onActivityResult(int requestCode,int resultCode, @NonNull Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+
+        if(requestCode==1)
+        {
+            Uri uri=data.getData();
+            imup.setImageURI(uri);
+            uploadi.setText("Done");
+        }
     }
 }
